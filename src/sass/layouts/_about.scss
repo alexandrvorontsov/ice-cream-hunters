@@ -1,0 +1,97 @@
+.about {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    background-color: rgba(255, 245, 246, 1);
+    background-image: url(/src/images/about/mobile/sectionbg-280.png);
+    background-repeat: no-repeat;
+    // background-position: center;
+    background-position-y: 80%;
+    background-size: 100%;
+@include table {
+    background-image: none;
+    padding-bottom: 0;}
+@include desktop {
+    background-image: url(/src/images/about/mobile/sectionbg-280.png);
+    background-repeat: no-repeat;
+    background-position-y: 120%;
+    background-size: 100%;}
+
+    &-toptext {
+        margin-bottom: 15px;
+        @include font('Titan One', 400, 18px, 1.17, none, 0.03em);
+        font-style: normal;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFA5BA;
+    @include table {
+        margin-bottom: 16px;
+        @include font('Titan One', 400, 26px, 1.15, none, 0.03em);}
+    @include desktop {
+        @include font('Titan One', 400, 30px, 1.13, none, 0.03em);}
+    }
+
+    &-title {
+        @include font('Titan One', 400, 34px, 1.15, none, 0.04em);
+        font-style: normal;
+        text-align: center;
+        text-transform: uppercase;
+        color: $accent-color;
+    @include table {
+        @include font('Titan One', 400, 48px, 1.15, none, 0.03em);}
+    @include desktop {
+        @include font('Titan One', 400, 58px, 1.14, none, 0.06em);}
+    }
+
+    &-img {
+    margin-top: 32px;
+    margin-bottom: 40px;
+    width: 280px;
+    height: 279px;
+    margin-right: auto;
+    margin-left: auto;
+    @include table {
+    margin-top: 40px;
+    margin-bottom: 0;
+    width: 336px;
+    height: 335px;}
+    @include desktop {
+    margin-top: 60px;
+    margin-bottom: 0;
+    width: 501px;
+    height: 501px;}
+        &__title {
+            @include font('DM Sans', 500, 12px, 1.59, none, 0.02em);
+            font-style: normal;
+            color: $second-text-color;
+            padding-right: 80px;
+            margin-bottom: 23px;
+        @include desktop {
+            @include font('DM Sans', 500, 16px, 1.75, none, 0.04em);
+            margin-bottom: 32px;}}
+        &__description {
+            @include font('DM Sans', 500, 12px, 1.59, none, 0.02em);
+            font-style: normal;
+            color: $third-text-color;
+            margin-bottom: 20px;
+            padding-right: 80px;
+        @include desktop {
+            @include font('DM Sans', 500, 14px, 1.92, none, 0.04em);
+            margin-bottom: 40px;}}}
+    &-button {
+        width: 176px;
+        height: 44px;
+        background: #FFFFFF;
+        border-radius: 22px;
+        border-style: none;}        
+} 
+
+.tab-option {
+@include table {
+    display: flex;
+    align-items: center;
+        &-text {
+        margin-left: 32px;
+    @include desktop {
+        margin-left: 99px;
+    }}}
+}
