@@ -1,0 +1,84 @@
+.products {
+    background-color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+
+}
+.products__pretitle {
+   padding-top: 60px;
+   text-align: center;
+
+   color: #FFA5BA;
+   @include font('Titan One', 400, 20px, 1.17, none, none);
+   text-transform: uppercase;
+}
+
+.products__title {
+    padding-top: 15px;
+    
+
+    text-align: center;
+    color: #D41443;
+    @include font('Titan One', 400, 34px, 1.14, none, 0.04em);
+}
+
+.products__card-one {
+    width: 280px;
+    height: 489px;
+    background-color:#FFB8CA;
+    border-radius: 24px;
+    border:none;
+
+
+}
+.products__card-two {
+    width: 280px;
+    height: 489px;
+    background-color: #F0D1A5;
+    border-radius: 24px;
+    border: none;
+
+    align-items: center;
+
+
+}
+
+.products__card-three {
+    width: 280px;
+    height: 489px;
+    background-color: #C2E297;
+    border-radius: 24px;
+    border: none;
+
+
+}
+
+.products__subtitle {
+    text-align: center;
+    
+
+    @include font('Titan One', 400, 20px, 1.15, none, 0.04em);
+    color: white;
+}
+
+.products__text {
+    width: 200px;
+    height: 124px;
+    margin-top: 70px;
+    text-align: center;
+    align-items: center;
+
+    @include font('DM Sans', 700, 14px, 1.5, none, 0.04em);
+    color: white;
+
+}
+
+.open-button {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   border: none;
+
+   align-items: center;
+}
+
