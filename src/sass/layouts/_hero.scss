@@ -1,0 +1,85 @@
+.hero {
+  position: relative;
+  background-color: $hero-bg;
+  padding-top: 136px;
+  padding-bottom: 158px;
+  background-image: url(../images/hero/mobile/cream-171.png), url(../images/hero/desktop/Ellipse-534.png);
+  background-position: bottom 0 right 32px, bottom 75px right -82px;
+  background-repeat: no-repeat;
+  background-size: 171px 410px, 346px;
+
+}
+
+
+.hero__title {
+  font-family: 'Titan One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 96.5%;
+  text-transform: uppercase;
+  color: $accent-color;
+  width: 218px;
+}
+
+.hero__span {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $text-color;
+}
+
+.hero__buttons-list {
+  display: flex;
+  margin-top: 20px;
+  gap: 8px;
+}
+
+.hero__button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 24px;
+flex-direction: row;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  color: $text-color;
+  background-color: $accent-color;
+  border-color: transparent;
+  border-radius: 20px;
+
+  &--invers {
+    color: $accent-color;
+    background-color: $text-color;
+  }
+
+}
+
+.number__list {
+  display: none;
+
+  @include table {
+    display: block;
+  }
+}
+
+.hero__text {
+  display: none;
+}
+
+.svg{
+  fill: red;
+  width: 50px;
+  height: 50px;
+}
