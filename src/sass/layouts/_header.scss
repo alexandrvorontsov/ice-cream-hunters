@@ -7,6 +7,5 @@
   color: $text-color;
   header__item--current {
     color: $accent-color;
-    @include font($ff, $fw, $fs, $lh, none, $ls);
   }
 }
