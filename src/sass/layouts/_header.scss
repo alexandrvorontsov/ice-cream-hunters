@@ -1,22 +1,38 @@
 .header {
   background-color: $hero-bg;
 }
-.header__list {
+.header__nav {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding-top: 52px;
-  gap: 35px;
 
-  color: aqua;
+  padding-top: 37px;
+}
+.header__list {
+  display: none;
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding-left: 126px;
+    padding-right: 141px;
+  }
 }
 
 .header__link {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   @include font('DM Sans', 700, 16px, 1.31, none, 0.03em);
   color: $text-color;
   &--current {
     color: $accent-color;
   }
+}
+.header__button {
+  @include font('DM Sans', 700, 16px, 1.31, none, 0.03em);
+  color: $accent-color;
+  background-color: $text-color;
+  padding: 10px 53px 10px 37px;
+  border-radius: 22px;
+  border: none;
 }
