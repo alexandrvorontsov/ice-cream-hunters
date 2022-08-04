@@ -1,0 +1,11 @@
+.header__list {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+.header__item {
+  color: $text-color;
+  header__item--current {
+    color: $accent-color;
+  }
+}
