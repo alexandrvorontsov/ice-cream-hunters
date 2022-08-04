@@ -1,0 +1,22 @@
+.header {
+  background-color: $hero-bg;
+}
+.header__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 52px;
+  gap: 35px;
+
+  color: aqua;
+}
+
+.header__link {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @include font('DM Sans', 700, 16px, 1.31, none, 0.03em);
+  color: $text-color;
+  &--current {
+    color: $accent-color;
+  }
+}
