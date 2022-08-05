@@ -3,8 +3,10 @@
   background-color: $hero-bg;
   padding-top: 136px;
   padding-bottom: 158px;
+
   background-image: url(../images/hero/mobile/cream-171.png),
     url(../images/hero/desktop/ellipse-534.png);
+  background-image: url(../images/hero/mobile/cream-171.png), url(../images/hero/desktop/ellipse-534.png);
   background-position: bottom 0 right 32px, bottom 75px right -82px;
   background-repeat: no-repeat;
   background-size: 171px 410px, 346px;
@@ -68,6 +70,29 @@
 }
 
 .hero__box {
+  @include table {
+    padding-top: 20px;
+    padding-bottom: 190px;
+    background-image:
+    url(../images/hero/mobile/cream-171.png),
+    url(../images/hero/desktop/ellipse-534.png),
+    url(../images/hero/desktop/moloko-213.png),
+    url(../images/hero/desktop/girl-304.png),
+    url(../images/hero/tablet/ellipse-16.png),
+    url(../images/hero/tablet/ellipse-16.png),
+    url(../images/hero/desktop/arrow-right.png);
+    background-position: bottom 0 right 45%, bottom 40px right 45%, bottom 16px left 0, bottom 0  right 0, bottom 56px left 184px;
+    background-size: 143px 336px, 335px, 152px, 190px 150px, 18px 18px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+        & {
+          background-image: url(../images/hero/mobile/cream-342.png), url(../images/hero/desktop/Ellipse-534.png), url(../images/hero/desktop/moloko-426.png), url(../images/hero/desktop/girl-608.png), url(../images/hero/desktop/arrow-right.png);
+        }
+  }
+}
+.hero__box{
   display: flex;
   justify-content: space-between;
 }
@@ -82,6 +107,7 @@
   color: $accent-color;
   width: 218px;
 
+
   @include table {
     font-size: 34px;
     line-height: 90.5%;
@@ -93,6 +119,10 @@
     line-height: 90.5%;
     letter-spacing: 0.04em;
     width: 277px;
+
+  @include table{
+    font-size: 34px;
+    line-height: 90.5%;
   }
 }
 
@@ -105,6 +135,7 @@
   text-transform: uppercase;
   color: $text-color;
 
+
   @include table {
     font-size: 22px;
     line-height: 1.14;
@@ -116,6 +147,13 @@
     line-height: 44px;
     letter-spacing: 0.04em;
   }
+
+    @include table {
+      font-size: 22px;
+    line-height: 1.14;
+      letter-spacing: 0.04em;
+      }
+
 }
 
 .hero__buttons-list {
@@ -131,7 +169,15 @@
 }
 
 .hero__button {
+
   width: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 24px;
+  padding-right: 24px;
   height: 24px;
   flex-direction: row;
   font-family: 'DM Sans';
@@ -169,6 +215,7 @@ background-color: #ECEBEB;
       font-size: 14px;
       line-height: 1.28;
     }
+
   }
 }
 
@@ -180,6 +227,7 @@ background-color: #ECEBEB;
     flex-direction: column;
     gap: 16px;
     width: 51px;
+
   }
 
   @include desktop {
@@ -241,9 +289,46 @@ background-color: #ECEBEB;
   }
 }
 
+.number__item{
+display: block;
+  width: 51px;
+    height: 44px;
+background-image: url(../images/hero/tablet/ellipse-16.png);
+background-position: top 0 right 0;
+background-size: 16px 16px;
+background-repeat: no-repeat;
+
+}
+
+.number__span{
+  display: block;
+  // width: 100%;
+  padding-right: 10px;
+font-family: 'Titan One';
+font-size: 28px;
+  line-height: 1.14;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-align: right;
+  color: $accent-color;
+}
+
+.number__text{
+  padding-right: 10px;
+font-family: 'DM Sans';
+  font-size: 8px;
+  line-height: 10px;
+  text-align: right;
+  color: $text-color;
+
+  &--mini{
+    padding-right: 0;
+  }
+
+}
+
 .hero__text {
   display: none;
-
   @include table {
     display: block;
     width: 114px;
@@ -265,3 +350,22 @@ background-color: #ECEBEB;
     left: 229px;
   }
 }
+
+  @include table{
+    display: block;
+    width: 114px;
+    position: absolute;
+    bottom: 81px;
+    left: 184px;
+
+    font-family: 'DM Sans';
+      font-size: 8px;
+      line-height: 150%;
+      color: $text-color;
+  }
+
+
+}
+
+}
+
