@@ -3,7 +3,7 @@
   background-color: $hero-bg;
   padding-top: 136px;
   padding-bottom: 158px;
-  background-image: url(../images/hero/mobile/cream-171.png), url(../images/hero/desktop/Ellipse-534.png);
+  background-image: url(../images/hero/mobile/cream-171.png), url(../images/hero/desktop/ellipse-534.png);
   background-position: bottom 0 right 32px, bottom 75px right -82px;
   background-repeat: no-repeat;
   background-size: 171px 410px, 346px;
@@ -13,7 +13,7 @@
     screen and (min-resolution: 2dppx) {
     & {
       background-image: url(../images/hero/mobile/cream-342.png),
-        url(../images/hero/desktop/Ellipse-534.png);
+        url(../images/hero/desktop/ellipse-534.png);
     }
   }
 
@@ -22,11 +22,11 @@
     padding-bottom: 190px;
     background-image:
     url(../images/hero/mobile/cream-171.png),
-    url(../images/hero/desktop/Ellipse-534.png),
+    url(../images/hero/desktop/ellipse-534.png),
     url(../images/hero/desktop/moloko-213.png),
     url(../images/hero/desktop/girl-304.png),
-    url(../images/hero/tablet/Ellipse-16.png),
-    url(../images/hero/tablet/Ellipse-16.png),
+    url(../images/hero/tablet/ellipse-16.png),
+    url(../images/hero/tablet/ellipse-16.png),
     url(../images/hero/desktop/arrow-right.png);
     background-position: bottom 0 right 45%, bottom 40px right 45%, bottom 16px left 0, bottom 0  right 0, bottom 56px left 184px;
     background-size: 143px 336px, 335px, 152px, 190px 150px, 18px 18px;
@@ -122,7 +122,7 @@
 display: block;
   width: 51px;
     height: 44px;
-background-image: url(../images/hero/tablet/Ellipse-16.png);
+background-image: url(../images/hero/tablet/ellipse-16.png);
 background-position: top 0 right 0;
 background-size: 16px 16px;
 background-repeat: no-repeat;
