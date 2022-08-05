@@ -1,8 +1,13 @@
 <header class="header">
   <nav class="header__nav container">
-    <!-- <svg width="199px" height="50px" class="header__logo">
-      <use href="./images/logo.svg"></use>
-    </svg> -->
+    <svg
+      width="199px"
+      height="50px"
+      class="header__logo"
+      aria-label="логотип компании"
+    >
+      <use href="./images/arrow.svg#arrow"></use>
+    </svg>
     <ul class="header__list list">
       <li class="header__item header__item--current">
         <a href="" class="header__link header__link--current">Home</a>
@@ -17,7 +22,45 @@
       <li class="header__item"><a href="" class="header__link">Contact</a></li>
     </ul>
 
-    <button class="button">Buy now</button>
-  </nav>
-</header>
+    <!-- БУРГЕР ======================================= -->
 
+    <button
+      type="button"
+      class="burger is-open"
+      aria-expanded="false"
+      aria-controls="menu-container"
+      data-menu-button
+    >
+      <svg
+        class="burger__svg"
+        width="40px"
+        height="40px"
+        aria-label="Переключатель мобильного меню"
+      >
+        <!-- <use class="icon-menu" href="./img/icons.svg#icon-close_menu"></use>
+        <use class="icon-close-menu" href="./img/icons.svg#icon-menu"></use> -->
+      </svg>
+    </button>
+  </nav>
+
+  <!-- MENU====================================== -->
+  <div class="menu" id="menu-container" data-menu>
+    <ul class="menu-site">
+      <li class="menu-site__item">
+        <a href="" class="menu-site__link">Home</a>
+      </li>
+      <li class="menu-site__item">
+        <a href="" class="menu-site__link">About us</a>
+      </li>
+      <li class="menu-site__item">
+        <a href="" class="menu-site__link">How it’s made?</a>
+      </li>
+      <li class="menu-site__item">
+        <a href="" class="menu-site__link">Our products</a>
+      </li>
+      <li class="menu-site__item">
+        <a href="" class="menu-site__link">Contact</a>
+      </li>
+    </ul>
+  </div>
+</header>
