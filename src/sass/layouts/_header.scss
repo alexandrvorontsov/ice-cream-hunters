@@ -1,22 +1,109 @@
 .header {
+  align-items: flex-end;
+  display: flex;
   background-color: $hero-bg;
+  height: 58px;
+
+  @include table {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 82px;
+    width: 100%;
+    background-color: transparent;
+  }
+  @include desktop {
+    padding-top: 37px;
+    height: 87px;
+    align-items: center;
+  }
+}
+
+.header__nav {
+  display: flex;
+  // align-items: center;
+  // justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .header__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 52px;
-  gap: 35px;
-
-  color: aqua;
+  display: none;
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+  }
 }
 
 .header__link {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   @include font('DM Sans', 700, 16px, 1.31, none, 0.03em);
   color: $text-color;
   &--current {
     color: $accent-color;
+  }
+}
+.header__right-block {
+  display: flex;
+  align-items: center;
+}
+.header__button {
+  display: none;
+  // vertical-align: text-bottom;
+  align-items: center;
+  height: 44px;
+
+  @include font('DM Sans', 700, 16px, 1.31, none, 0.03em);
+  color: $accent-color;
+  background-color: $text-color;
+  padding: 12px 37px 12px 37px;
+  border-radius: 22px;
+  border: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    background-color: #ecebeb;
+  }
+  @include table {
+    display: flex;
+    margin-left: 32px;
+  }
+}
+.header__test-button {
+  margin-right: 12px;
+}
+// БУРГЕР ========================
+.burger {
+  margin-left: auto;
+  align-items: center;
+  z-index: 999;
+
+  border: none;
+  background-color: transparent;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 0;
+  padding-right: 0;
+  @include table {
+    display: flex;
+  }
+  @include desktop {
+    display: none;
+  }
+  &:hover .burger__svg,
+  &:focus .burger__svg {
+    fill: $accent-color;
+  }
+  & .icon-close-menu {
+    display: none;
+  }
+  &.is-open .icon-close-menu {
+    display: block;
+  }
+  &.is-open .icon-menu {
+    display: none;
   }
 }
