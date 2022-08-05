@@ -1,13 +1,15 @@
-<header class="header">
-  <nav class="header__nav container">
+<header class="header container">
+  <a href="#">
     <svg
       width="199px"
       height="50px"
       class="header__logo"
       aria-label="логотип компании"
     >
-      <use href="./images/arrow.svg#arrow"></use>
-    </svg>
+      <use href="./images/icons.svg#icon-logo"></use></svg
+  ></a>
+
+  <nav class="header__nav">
     <ul class="header__list list">
       <li class="header__item header__item--current">
         <a href="" class="header__link header__link--current">Home</a>
@@ -21,10 +23,43 @@
       </li>
       <li class="header__item"><a href="" class="header__link">Contact</a></li>
     </ul>
+  </nav>
 
-    <button type="button" class="header__button">Buy now</button>
+  <!-- МЕНЮ ======================================= -->
+  <div class="backdrop"></div>
+  <!-- <div class="menu" id="menu-container" data-menu>
+    <button type="button" class="header__button">
+      <span class="header__test-button">Buy now </span>
+      <svg
+        width="8px"
+        height="16px"
+        class="icon-arrow"
+        aria-label="логотип компании"
+      >
+        <use href="./images/icons.svg#icon-vector-1"></use>
+      </svg>
+    </button>
+
+    <ul class="menu-site">
+      <li class="menu-site__item">
+        <a href="" class="menu-site__link">Home</a>
+      </li>
+      <li class="menu-site__item">
+        <a href="" class="menu-site__link">About us</a>
+      </li>
+      <li class="menu-site__item">
+        <a href="" class="menu-site__link">How it’s made?</a>
+      </li>
+      <li class="menu-site__item">
+        <a href="" class="menu-site__link">Our products</a>
+      </li>
+      <li class="menu-site__item">
+        <a href="" class="menu-site__link">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <div class="header__right-block"> -->
     <!-- БУРГЕР ======================================= -->
-
     <button
       type="button"
       class="burger is-open"
@@ -45,5 +80,17 @@
         ></use>
       </svg>
     </button>
-  </nav>
+    <!-- <БЕЛАЯ КНОПКА> ======================================= -->
+    <button type="button" class="header__button">
+      <span class="header__test-button">Buy now </span>
+      <svg
+        width="8px"
+        height="16px"
+        class="icon-arrow"
+        aria-label="логотип компании"
+      >
+        <use href="./images/icons.svg#icon-vector-1"></use>
+      </svg>
+    </button>
+  </div>
 </header>
