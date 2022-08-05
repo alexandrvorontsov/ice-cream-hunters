@@ -58,7 +58,9 @@
     margin-top: 60px;
     margin-bottom: 0;
     width: 501px;
-    height: 501px;}
+    height: 501px;
+
+}
         &__title {
             @include font('DM Sans', 500, 12px, 1.59, none, 0.02em);
             font-style: normal;
