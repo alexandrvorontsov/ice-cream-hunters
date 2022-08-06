@@ -93,17 +93,4 @@
   @include desktop {
     display: none;
   }
-  &:hover .burger__svg,
-  &:focus .burger__svg {
-    fill: $accent-color;
-  }
-  & .icon-close-menu {
-    display: none;
-  }
-  &.is-open .icon-close-menu {
-    display: block;
-  }
-  &.is-open .icon-menu {
-    display: none;
-  }
 }
