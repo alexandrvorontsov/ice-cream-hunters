@@ -60,8 +60,7 @@
         background-image: url(../images/hero/desktop/cream-472.png),
           url(../images/hero/desktop/girl-608.png),
           url(../images/hero/desktop/ellipse-534.png),
-          url(../images/hero/desktop/moloko-426.png),
-          url(../images/hero/desktop/arrow-right.png);
+          url(../images/hero/desktop/moloko-426.png);
       }
     }
   }
@@ -290,8 +289,8 @@
   @include table {
     display: block;
     width: 114px;
-   margin-left: 152px;
-   margin-bottom: 7px;
+    margin-left: 152px;
+    margin-bottom: 7px;
 
     font-family: 'DM Sans';
     font-size: 8px;
@@ -300,34 +299,46 @@
   }
 
   @include desktop {
-  margin-left: 213px;
+    margin-left: 213px;
     margin-bottom: 20px;
 
     font-size: 14px;
     line-height: 140%;
     width: 200px;
-
   }
 }
 
-.gallery__button-arrow{
+.gallery__button-arrow {
   display: none;
   cursor: pointer;
 
-@include table {
-  padding: 0;
-    display: block;
-    background-color: transparent;
+  @include table {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
-   margin-left: 152px;
-   width: 18px;
-   height: 18px;
+    margin-left: 152px;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border-radius: 50%;
   }
 
-@include desktop {
-  margin-left: 213px;
-  width: 26px;
-  height: 26px;
+  @include desktop {
+    margin-left: 213px;
+    width: 26px;
+    height: 26px;
+  }
 }
 
+.gallery__icon {
+  fill: $accent-color;
+  width: 5px;
+  height: 5px;
+
+  @include desktop {
+    width: 8px;
+    height: 8px;
+  }
 }
