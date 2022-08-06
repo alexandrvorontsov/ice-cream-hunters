@@ -1,45 +1,298 @@
-.products {
-    background-color: white;
-    padding-right: 20px;
-    padding-left: 20px;
-
-}
 .products__pretitle {
-   padding-top: 60px;
-   text-align: center;
+    padding-top: 60px;
+    text-align: center;
 
-   color: #FFA5BA;
-   @include font('Titan One', 400, 20px, 1.17, none, none);
-   text-transform: uppercase;
+    color: #FFA5BA;
+    @include font('Titan One', 400, 20px, 1.17, none, none);
+    text-transform: uppercase;
+
+
+    @media screen and (min-width: 768px) {
+        @include font('Titan One', 400, 26px, 1.15, none, none);
+    }
+
+
+    @media screen and (min-width: 1200px) {
+        @include font('Titan One', 400, 30px, 1.13, none, 0.04em);
+    }
+
+
+
 }
 
 .products__title {
     padding-top: 15px;
-    
+    margin-bottom: 157px;
 
     text-align: center;
     color: #D41443;
     @include font('Titan One', 400, 34px, 1.14, none, 0.04em);
+
+    @media screen and (min-width: 768px) {
+        @include font('Titan One', 400, 48px, 1.14, none, 0.04em);
+        padding-top: 18px;
+        margin-bottom: 158px;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include font('Titan One', 400, 58px, 1.13, none, 0.06em);
+        padding-top: 16px;
+        margin-bottom: 281px;
+    }
+
+
 }
+
+
 
 .products__card-one {
     width: 280px;
     height: 489px;
-    background-color:#FFB8CA;
+    background-color: #FFB8CA;
     border-radius: 24px;
-    border:none;
+    border: none;
+    margin-bottom: 140px;
+    position: relative;
+    padding-top: 160px;
+
+    padding-bottom: 70px;
+
+    @media screen and (min-width: 768px) {
+        width: 224px;
+        height: 473px;
+        margin-bottom: 60px;
+        padding-top: 118px;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 368px;
+        height: 535px;
+        padding-top: 165px;
+
+    }
 
 
 }
+
+
+.products__subtitle-one::before {
+    content: "";
+    background-image: url("../images/product/mobile/cream-228.png");
+    width: 280px;
+    display: block;
+    height: 280px;
+    margin-top: 11px;
+    position: absolute;
+    top: -160px;
+    left: 0;
+    margin-bottom: 70px;
+
+    @media screen and (min-width: 768px) {
+        background-image: url("../images/product/tablet/cream-224.png");
+        width: 224px;
+        height: 224px;
+        margin-top: 20px;
+        top: -160px;
+        left: 0;
+        margin-bottom: 70px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url("../images/product/desktop/cream-368.png");
+        width: 368px;
+        height: 394px;
+
+
+        top: -280px;
+        left: 0;
+        margin-bottom: 70px;
+    }
+
+
+}
+
+.products__subtitle-one::after {
+    content: "...";
+    width: 26px;
+    display: block;
+    height: 6px;
+
+    position: absolute;
+    bottom: 214px;
+    right: 127px;
+
+    margin-bottom: 70px;
+
+    @media screen and (min-width: 768px) {
+        right: 99px;
+        margin-bottom: 90px;
+
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        right: 171px;
+        margin-bottom: 250px;
+    }
+
+
+
+}
+
+.products__subtitle-two::before {
+    content: "";
+    background-image: url("../images/product/mobile/coffee-280.png");
+    width: 280px;
+    display: block;
+    height: 280px;
+
+    position: absolute;
+    top: -146px;
+
+    left: 0;
+    margin-bottom: 70px;
+
+    @media screen and (min-width: 768px) {
+        background-image: url("../images/product/tablet/coffee-224.png");
+        width: 224px;
+        height: 224px;
+        margin-top: 20px;
+        top: -160px;
+        left: 0;
+        margin-bottom: 70px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url("../images/product/desktop/coffee-368.png");
+        width: 368px;
+        height: 394px;
+        margin-top: 20px;
+        top: -280px;
+        left: 0;
+        margin-bottom: 70px;
+    }
+
+}
+
+.products__subtitle-two::after {
+    content: "...";
+    width: 26px;
+    display: block;
+    height: 6px;
+
+    position: absolute;
+    bottom: 214px;
+    right: 127px;
+
+    margin-bottom: 70px;
+
+    @media screen and (min-width: 768px) {
+        right: 99px;
+        margin-bottom: 90px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        right: 171px;
+        margin-bottom: 250px;
+    }
+
+
+}
+
+.products__subtitle-three::before {
+    content: "";
+    background-image: url("../images/product/mobile/milkshakes-280.png");
+    width: 280px;
+    display: block;
+    height: 280px;
+    position: absolute;
+    top: -140px;
+
+    left: 0;
+    margin-bottom: 70px;
+
+    @media screen and (min-width: 768px) {
+        background-image: url("../images/product/tablet/milkshakes-224.png");
+        width: 224px;
+        height: 224px;
+        margin-top: 20px;
+        top: -160px;
+        left: 0;
+        margin-bottom: 70px;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: url("../images/product/desktop/milkshakes-368.png");
+        width: 368px;
+        height: 394px;
+
+
+        top: -280px;
+        left: 0;
+        margin-bottom: 250px;
+    }
+}
+
+.products__subtitle-three::after {
+    content: "...";
+    width: 26px;
+    display: block;
+    height: 6px;
+
+    position: absolute;
+    bottom: 214px;
+    right: 127px;
+
+    margin-bottom: 70px;
+
+    @media screen and (min-width: 768px) {
+        right: 99px;
+        left: 99px;
+        margin-bottom: 90px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        right: 171px;
+        left: 171px;
+        margin-bottom: 250px;
+    }
+
+}
+
+
 .products__card-two {
     width: 280px;
     height: 489px;
     background-color: #F0D1A5;
     border-radius: 24px;
     border: none;
-
+    margin-bottom: 140px;
     align-items: center;
 
+    position: relative;
+    padding-top: 160px;
+
+    padding-bottom: 70px;
+
+    @media screen and (min-width: 768px) {
+        width: 224px;
+        height: 473px;
+        margin-bottom: 60px;
+        padding-top: 118px;
+        ;
+        padding-bottom: 70px;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 368px;
+        height: 535px;
+        padding-top: 165px;
+
+    }
 
 }
 
@@ -49,36 +302,122 @@
     background-color: #C2E297;
     border-radius: 24px;
     border: none;
+    margin-bottom: 128px;
+    align-items: center;
+
+    position: relative;
+    padding-top: 160px;
+
+    padding-bottom: 70px;
+
+    @media screen and (min-width: 768px) {
+        width: 224px;
+        height: 473px;
+        margin-bottom: 70px;
+        padding-top: 118px;
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 368px;
+        height: 535px;
+        padding-top: 165px;
+
+    }
+}
+
+.products__subtitle-one,
+.products__subtitle-two,
+.products__subtitle-three {
+    text-align: center;
+    margin-bottom: 70px;
+
+    @include font('Titan One', 400, 20px, 1.15, none, 0.04em);
+    color: white;
+
+    @media screen and (min-width: 768px) {
+        @include font('Titan One', 400, 20px, 1.14, none, 0.04em);
+        ;
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include font('Titan One', 400, 30px, 1.14, none, 0.04em);
+
+    }
 
 
 }
 
-.products__subtitle {
-    text-align: center;
-    
+.wrap {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+    }
 
-    @include font('Titan One', 400, 20px, 1.15, none, 0.04em);
-    color: white;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+    }
+
+
 }
 
 .products__text {
     width: 200px;
     height: 124px;
-    margin-top: 70px;
+    margin-left: 40px;
     text-align: center;
     align-items: center;
+    margin-bottom: 32px;
 
     @include font('DM Sans', 700, 14px, 1.5, none, 0.04em);
     color: white;
 
+    @media screen and (min-width: 768px) {
+        @include font('DM Sans', 400, 14px, 1.76, none, 0.04em);
+        width: 160px;
+        height: 150px;
+        margin-left: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        @include font('DM Sans', 400, 16px, 1.75, none, 0.04em);
+        width: 245px;
+        height: 106px;
+        margin-left: 61px;
+    }
+
 }
 
 .open-button {
-   width: 40px;
-   height: 40px;
-   border-radius: 50%;
-   border: none;
+    width: 40px;
+    height: 40px;
 
-   align-items: center;
+    border: none;
+
+
+
+
+
 }
 
+.product__button {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    background-position: center;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {}
+
+
+}
