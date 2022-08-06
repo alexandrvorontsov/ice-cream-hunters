@@ -1,13 +1,16 @@
-<header class="header">
-  <nav class="header__nav container">
+
+<header class="header container">
+  <a href="#">
     <svg
       width="199px"
       height="50px"
       class="header__logo"
       aria-label="логотип компании"
     >
-      <use href="./images/arrow.svg#arrow"></use>
-    </svg>
+      <use href="./images/icons.svg#icon-logo"></use></svg
+  ></a>
+
+  <nav class="header__nav">
     <ul class="header__list list">
       <li class="header__item header__item--current">
         <a href="" class="header__link header__link--current">Home</a>
@@ -21,30 +24,23 @@
       </li>
       <li class="header__item"><a href="" class="header__link">Contact</a></li>
     </ul>
-
-    <!-- БУРГЕР ======================================= -->
-
-    <button
-      type="button"
-      class="burger is-open"
-      aria-expanded="false"
-      aria-controls="menu-container"
-      data-menu-button
-    >
-      <svg
-        class="burger__svg"
-        width="40px"
-        height="40px"
-        aria-label="Переключатель мобильного меню"
-      >
-        <!-- <use class="icon-menu" href="./img/icons.svg#icon-close_menu"></use>
-        <use class="icon-close-menu" href="./img/icons.svg#icon-menu"></use> -->
-      </svg>
-    </button>
   </nav>
 
-  <!-- MENU====================================== -->
-  <div class="menu" id="menu-container" data-menu>
+  <!-- МЕНЮ ======================================= -->
+  <div class="backdrop"></div>
+  <!-- <div class="menu" id="menu-container" data-menu>
+    <button type="button" class="header__button">
+      <span class="header__test-button">Buy now </span>
+      <svg
+        width="8px"
+        height="16px"
+        class="icon-arrow"
+        aria-label="логотип компании"
+      >
+        <use href="./images/icons.svg#icon-vector-1"></use>
+      </svg>
+    </button>
+
     <ul class="menu-site">
       <li class="menu-site__item">
         <a href="" class="menu-site__link">Home</a>
@@ -63,7 +59,41 @@
       </li>
     </ul>
   </div>
-</header>
-    <button class="button">Buy now</button>
-  </nav>
+  <div class="header__right-block"> -->
+    <!-- БУРГЕР ======================================= -->
+    <div class="header__right-block">
+    <button
+      type="button"
+      class="burger is-open"
+      aria-expanded="false"
+      aria-controls="menu-container"
+      data-menu-button
+    >
+      <svg
+        class="burger__svg"
+        width="20px"
+        height="20px"
+        aria-label="Переключатель мобильного меню"
+      >
+        <use class="icon-menu" href="./images/icons.svg#icon-close"></use>
+        <use
+          class="icon-close-menu"
+          href="./images/icons.svg#icon-burger"
+        ></use>
+      </svg>
+    </button>
+    <!-- <БЕЛАЯ КНОПКА> ======================================= -->
+    <button type="button" class="header__button">
+      <span class="header__test-button">Buy now </span>
+      <svg
+        width="8px"
+        height="16px"
+        class="icon-arrow"
+        aria-label="логотип компании"
+      >
+        <use href="./images/icons.svg#icon-vector-1"></use>
+      </svg>
+    </button>
+  </div>
+</div>
 </header>

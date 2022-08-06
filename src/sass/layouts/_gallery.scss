@@ -1,0 +1,160 @@
+.gallery {
+  padding-bottom: 60px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 245, 246, 1) 14%,
+    rgba(255, 255, 255, 1) 14%
+  );
+
+  @include table {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 245, 246, 1) 48%,
+      rgba(255, 255, 255, 1) 48%
+    );
+  }
+
+  @include desktop {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 245, 246, 1) 16%,
+      rgba(255, 255, 255, 1) 16%
+    );
+    padding-bottom: 120px;
+  }
+}
+
+.gallery__list {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+
+  @include table {
+    gap: 6px;
+  }
+
+  @include desktop {
+    gap: 8px;
+  }
+}
+
+.gallery__item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  @include table {
+    gap: 6px;
+  }
+
+  @include desktop {
+    gap: 8px;
+  }
+}
+
+.gallery__picture {
+  max-width: 44px;
+  transition-property: scale(1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include mobile {
+    min-width: 74px;
+  }
+
+  @include table {
+    min-width: 105px;
+  }
+
+  @include desktop {
+    min-width: 138px;
+  }
+}
+
+.gallery__link {
+  border-radius: 20px;
+  max-width: 139px;
+  max-height: 139px;
+}
+
+.gallery__link:hover .gallery__picture,
+.gallery__link:focus .gallery__picture {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.gallery__picture-big {
+  width: 90px;
+  transition-property: scale(1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include mobile {
+    min-width: 152px;
+  }
+
+  @include table {
+    min-width: 214px;
+  }
+
+  @include desktop {
+    min-width: 283px;
+  }
+}
+
+.gallery__link:hover .gallery__picture-big,
+.gallery__link:focus .gallery__picture-big {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.gallery-first-last {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 45px;
+
+  @include table {
+    margin-top: 108px;
+    gap: 6px;
+  }
+
+  @include desktop {
+    gap: 8px;
+    margin-top: 143px;
+  }
+}
+
+.gallery-two-four {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 28px;
+
+  @include table {
+    gap: 6px;
+    margin-top: 67px;
+  }
+
+  @include desktop {
+    gap: 8px;
+    margin-top: 89px;
+  }
+}
+
+.gallery-fife {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 20px;
+
+  @include table {
+    gap: 6px;
+    margin-top: 50px;
+  }
+
+  @include desktop {
+    gap: 8px;
+    margin-top: 66px;
+  }
+}
