@@ -22,8 +22,6 @@
 
 .header__nav {
   display: flex;
-  // align-items: center;
-  // justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -42,17 +40,22 @@
   padding-bottom: 10px;
   @include font('DM Sans', 700, 16px, 1.31, none, 0.03em);
   color: $text-color;
-  &--current {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  &--red {
     color: $accent-color;
   }
 }
+
 .header__right-block {
   display: flex;
   align-items: center;
 }
 .header__button {
   display: none;
-  // vertical-align: text-bottom;
   align-items: center;
   height: 44px;
 
@@ -91,19 +94,6 @@
     display: flex;
   }
   @include desktop {
-    display: none;
-  }
-  &:hover .burger__svg,
-  &:focus .burger__svg {
-    fill: $accent-color;
-  }
-  & .icon-close-menu {
-    display: none;
-  }
-  &.is-open .icon-close-menu {
-    display: block;
-  }
-  &.is-open .icon-menu {
     display: none;
   }
 }
