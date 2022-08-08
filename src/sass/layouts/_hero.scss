@@ -1,8 +1,15 @@
+.hero-section{
+background-color: $hero-bg;
+}
+
 .hero {
-  position: relative;
-  background-color: $hero-bg;
+position: relative;
+padding-left: 0;
+padding-right: 0;
   padding-top: 136px;
   padding-bottom: 158px;
+  margin-left: auto;
+  margin-right: auto;
 
   background-image: url(../images/hero/mobile/cream-171.png),
     url(../images/hero/desktop/ellipse-534.png);
@@ -43,6 +50,7 @@
   }
 
   @include desktop {
+    max-width: 1200px;
     padding-top: 147px;
     padding-bottom: 84px;
     background-image: url(../images/hero/mobile/cream-171.png),
