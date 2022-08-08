@@ -34,6 +34,7 @@
         text-align: right;
         color: #000000;
     &__color {
+        text-decoration-line: none;
         color: #D41443;}
 
     @include table {
@@ -67,6 +68,19 @@
     width: 32px;
     height: 32px;
     padding: 7px;
+
+    &:hover,
+        &:focus {
+            animation: ftr-social__icon 1s;
+            box-shadow: 0 0 0 2em transparent;
+        }
+    
+        @keyframes ftr-social__icon {
+            0% {
+                box-shadow: 0 0 0 0 #FFA5BA;
+            }
+        }
+
 @include table {
     width: 34px;
     height: 34px;}}
@@ -109,8 +123,3 @@ padding-bottom: 8px;
         margin-bottom: 10px;
     }
 }
-// .text {
-//     display: flex;
-//     flex-direction: column;
-// }
-
