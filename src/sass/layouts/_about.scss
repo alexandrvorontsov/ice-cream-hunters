@@ -95,9 +95,24 @@
             margin-left: 13px;
             top:auto;
             bottom:auto;}
-                &:hover,
-                &:focus {
-                    background: rgba(236, 235, 235, 1);}}
+
+                        &:hover,
+                        &:focus {
+                            animation: about-button 1s;
+                            box-shadow: 0 0 0 2em transparent;
+                        }
+            
+                        @keyframes about-button {
+                            0% {
+                                box-shadow: 0 0 0 0 #ffa5ba;
+                            }
+                        }
+                
+        // &:hover,
+        // &:focus {
+        //             background: rgba(236, 235, 235, 1);}
+                
+                }
 } 
 
 .tab-option {
