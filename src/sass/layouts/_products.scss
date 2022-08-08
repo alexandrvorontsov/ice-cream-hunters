@@ -398,6 +398,19 @@
     background-color: #fff;
     border-radius: 50%;
 
+    &:hover,
+        &:focus {
+            animation: product__button 1s;
+            box-shadow: 0 0 0 2em transparent;
+        }
+    
+        @keyframes product__button {
+            0% {
+                box-shadow: 0 0 0 0 #fff;
+            }
+        }
+    
+
 }
 .product__icon {
     fill: $accent-color;
