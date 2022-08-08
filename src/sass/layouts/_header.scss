@@ -17,9 +17,13 @@
     padding-top: 37px;
     height: 87px;
     align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
-
+.header__logo {
+  filter: drop-shadow(1px 1px 1px #32323299);
+}
 .header__nav {
   display: flex;
   margin-left: auto;
@@ -58,6 +62,17 @@
   display: none;
   align-items: center;
   height: 44px;
+  &:hover,
+  &:focus {
+    animation: header__button 1s;
+    box-shadow: 0 0 0 2em transparent;
+  }
+
+  @keyframes header__button {
+    0% {
+      box-shadow: 0 0 0 0 #ffa5ba;
+    }
+  }
 
   @include font('DM Sans', 700, 16px, 1.31, none, 0.03em);
   color: $accent-color;
@@ -66,10 +81,6 @@
   border-radius: 22px;
   border: none;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:focus,
-  &:hover {
-    background-color: #ecebeb;
-  }
   @include table {
     display: flex;
     margin-left: 32px;
