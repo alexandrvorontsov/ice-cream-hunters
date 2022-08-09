@@ -3,25 +3,37 @@
   position: relative;
   overflow: hidden;
   z-index: 1;
+  padding-top: 136px;
+  padding-bottom: 158px;
+
+  @include table {
+padding-top: 102px;
+    padding-bottom: 56px;
+    }
+
+    @include desktop {
+    padding-top: 147px;
+      padding-bottom: 84px;
+    }
 }
 
 .hero__img-ellipse {
   position: absolute;
-  bottom: 75px;
+  bottom: -83px;
   right: -62px;
   z-index: -2;
   min-width: 346px;
   max-width: 346px;
 
   @include table {
-    bottom: 40px;
+    bottom: -16px;
     right: 185px;
     min-width: 335px;
     max-width: 335px;
   }
 
   @include desktop {
-    bottom: 76px;
+    bottom: -8px;
     right: 149px;
     min-width: 534px;
     max-width: 534px;
@@ -30,70 +42,114 @@
 
 .hero__img-ice {
   position: absolute;
-  bottom: 0;
+  bottom: -158px;
   right: 32px;
   z-index: -1;
   width: 171px;
   height: 410px;
 
   @include table {
+    bottom: -56px;
     right: 303px;
     width: 143px;
     height: 336px;
   }
 
   @include desktop {
-    bottom: 0px;
+    bottom: -84px;
     right: 328px;
     width: 236px;
     height: 557px;
   }
 }
 
+.hero__img-milk{
+  display: none;
+
+  @include table {
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    left: 32px;
+      width: 152px;
+      height: 154px;
+    }
+
+    @include desktop {
+      bottom: -28px;
+      left: 16px;
+      width: 213px;
+      height: 216px;
+    }
+
+}
+
+.hero__img-girl {
+  display: none;
+
+  @include table {
+    display: block;
+    position: absolute;
+    bottom: -56px;
+    right: 32px;
+    width: 190px;
+    height: 150px;
+  }
+
+  @include desktop {
+    bottom: -84px;
+   right: 16px;
+    width: 304px;
+    height: 241px;
+  }
+
+}
+
+
 .hero {
   position: relative;
-  padding-top: 136px;
-  padding-bottom: 158px;
+  // padding-top: 136px;
+  // padding-bottom: 158px;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
 
-  @include table {
-    padding-top: 102px;
-    padding-bottom: 56px;
-    background-image: url(../images/hero/desktop/moloko-213.png),
-      url(../images/hero/desktop/girl-304.png);
-    background-position: bottom 16px left 32px, bottom 0 right 32px;
-    background-size: 152px, 190px 150px;
+  // @include table {
+  //   padding-top: 102px;
+  //   padding-bottom: 56px;
+  //   background-image: url(../images/hero/desktop/moloko-213.png),
+  //     url(../images/hero/desktop/girl-304.png);
+  //   background-position: bottom 16px left 32px, bottom 0 right 32px;
+  //   background-size: 152px, 190px 150px;
 
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      & {
-        background-image: url(../images/hero/desktop/moloko-426.png),
-          url(../images/hero/desktop/girl-608.png);
-      }
-    }
-  }
+  //   @media screen and (min-device-pixel-ratio: 2),
+  //     screen and (min-resolution: 192dpi),
+  //     screen and (min-resolution: 2dppx) {
+  //     & {
+  //       background-image: url(../images/hero/desktop/moloko-426.png),
+  //         url(../images/hero/desktop/girl-608.png);
+  //     }
+  //   }
+  // }
 
-  @include desktop {
-    max-width: 1200px;
-    padding-top: 147px;
-    padding-bottom: 84px;
-    background-image: url(../images/hero/desktop/girl-304.png),
-      url(../images/hero/desktop/moloko-213.png);
-    background-position: bottom 0 right 16px, bottom 60px left 16px;
-    background-size: 304px 241px, 213px 216px;
+  // @include desktop {
+  //   max-width: 1200px;
+  //   padding-top: 147px;
+  //   padding-bottom: 84px;
+  //   background-image: url(../images/hero/desktop/girl-304.png),
+  //     url(../images/hero/desktop/moloko-213.png);
+  //   background-position: bottom 0 right 16px, bottom 60px left 16px;
+  //   background-size: 304px 241px, 213px 216px;
 
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      & {
-        background-image: url(../images/hero/desktop/girl-608.png),
-          url(../images/hero/desktop/moloko-426.png);
-      }
-    }
-  }
+  //   @media screen and (min-device-pixel-ratio: 2),
+  //     screen and (min-resolution: 192dpi),
+  //     screen and (min-resolution: 2dppx) {
+  //     & {
+  //       background-image: url(../images/hero/desktop/girl-608.png),
+  //         url(../images/hero/desktop/moloko-426.png);
+  //     }
+  //   }
+  // }
 }
 
 .hero__box {
