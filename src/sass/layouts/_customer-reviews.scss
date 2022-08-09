@@ -1,5 +1,11 @@
 .customer-reviews {
-  margin-bottom: 60px;
+  padding-bottom: 60px;
+  @include table {
+    padding-bottom: 80px;
+  }
+  @include desktop {
+    padding-bottom: 120px;
+  }
 }
 
 .swiper {
