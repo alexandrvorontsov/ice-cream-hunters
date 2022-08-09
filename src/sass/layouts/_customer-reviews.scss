@@ -199,7 +199,7 @@
   z-index: 99;
   border: none;
   outline: none;
-  background-color: $hero-bg;
+  background-color: $accent-color;
   color: white;
   cursor: pointer;
   width: 40px;
@@ -208,9 +208,9 @@
   font-size: 14px;
 }
 
-#myBtn:hover {
-  background-color: $accent-color;
-}
+// #myBtn:hover {
+//   background-color: $accent-color;
+// }
 
 .body {
   scroll-behavior: smooth;
