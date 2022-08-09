@@ -187,8 +187,9 @@
   @include font('DM Sans', 700, 16, 1.31, none, 0.04em);
   color: #d41342;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  margin-left: 13px;
 
   @media screen and (min-width: 768px) {
     width: 174px;
