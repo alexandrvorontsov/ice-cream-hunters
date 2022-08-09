@@ -1,48 +1,54 @@
 .about {
-    padding-top: 60px;
-    padding-bottom: 20px;
-    background-color: rgba(255, 245, 246, 1);
-    background-image: url(/src/images/about/mobile/sectionbg-280.png);
-    background-repeat: no-repeat;
-    // background-position: center;
-    background-position-y: 80%;
-    background-size: 105%;
-@include table {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  background-color: rgba(255, 245, 246, 1);
+  background-image: url(/src/images/about/mobile/sectionbg-280.png);
+  background-repeat: no-repeat;
+  // background-position: center;
+  background-position-y: 80%;
+  background-size: 105%;
+  @include table {
     background-image: none;
-    padding-bottom: 0;}
-@include desktop {
+    padding-bottom: 0;
+  }
+  @include desktop {
     background-image: url(/src/images/about/mobile/sectionbg-280.png);
     background-repeat: no-repeat;
     background-position-y: 120%;
-    background-size: 100%;}
+    background-size: 100%;
+  }
 
-    &-toptext {
-        margin-bottom: 15px;
-        @include font('Titan One', 400, 18px, 1.17, none, 0.03em);
-        font-style: normal;
-        text-align: center;
-        text-transform: uppercase;
-        color: #FFA5BA;
+  &-toptext {
+    margin-bottom: 15px;
+    @include font('Titan One', 400, 18px, 1.17, none, 0.03em);
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffa5ba;
     @include table {
-        margin-bottom: 16px;
-        @include font('Titan One', 400, 26px, 1.15, none, 0.03em);}
-    @include desktop {
-        @include font('Titan One', 400, 30px, 1.13, none, 0.03em);}
+      margin-bottom: 16px;
+      @include font('Titan One', 400, 26px, 1.15, none, 0.03em);
     }
+    @include desktop {
+      @include font('Titan One', 400, 30px, 1.13, none, 0.03em);
+    }
+  }
 
-    &-title {
-        @include font('Titan One', 400, 34px, 1.15, none, 0.04em);
-        font-style: normal;
-        text-align: center;
-        text-transform: uppercase;
-        color: $accent-color;
+  &-title {
+    @include font('Titan One', 400, 34px, 1.15, none, 0.04em);
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: $accent-color;
     @include table {
-        @include font('Titan One', 400, 48px, 1.15, none, 0.03em);}
-    @include desktop {
-        @include font('Titan One', 400, 58px, 1.14, none, 0.06em);}
+      @include font('Titan One', 400, 48px, 1.15, none, 0.03em);
     }
+    @include desktop {
+      @include font('Titan One', 400, 58px, 1.14, none, 0.06em);
+    }
+  }
 
-    &-img {
+  &-img {
     max-width: none;
     margin-top: 32px;
     margin-bottom: 40px;
@@ -50,77 +56,93 @@
     height: 279px;
     // margin-right: auto;
     // margin-left: auto;
-@include table {
-    margin-top: 40px;
-    margin-bottom: 0;
-    width: 336px;
-    height: 335px;}
-@include desktop {
-    margin-top: 60px;
-    margin-bottom: 0;
-    width: 501px;
-    height: 501px;}
-        &__title {
-            @include font('DM Sans', 500, 12px, 1.59, none, 0.02em);
-            font-style: normal;
-            color: $second-text-color;
-            padding-right: 80px;
-            margin-bottom: 23px;
-        @include desktop {
-            @include font('DM Sans', 500, 16px, 1.75, none, 0.04em);
-            margin-bottom: 32px;}}
-        &__description {
-            @include font('DM Sans', 500, 12px, 1.59, none, 0.02em);
-            font-style: normal;
-            color: $third-text-color;
-            margin-bottom: 20px;
-            padding-right: 80px;
-        @include desktop {
-            @include font('DM Sans', 500, 14px, 1.92, none, 0.04em);
-            margin-bottom: 40px;}}}
-    &-button {
-        width: 176px;
-        height: 44px;
-        background: #FFFFFF;
-        border-radius: 22px;
-        border-style: none;
-        @include font('DM Sans', 700, 16px, 1.31, none, 0.02em);
-        font-style: normal;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #D41443;
-        &__icon {
-            display: block;
-            margin-left: 13px;
-            top:auto;
-            bottom:auto;}
-
-                        &:hover,
-                        &:focus {
-                            animation: about-button 1s;
-                            box-shadow: 0 0 0 2em transparent;
-                        }
-            
-                        @keyframes about-button {
-                            0% {
-                                box-shadow: 0 0 0 0 #ffa5ba;
-                            }
-                        }
-                
-        // &:hover,
-        // &:focus {
-        //             background: rgba(236, 235, 235, 1);}
-                
-                }
-} 
-
-.tab-option {
-@include table {
+    @include table {
+      margin-top: 40px;
+      margin-bottom: 0;
+      width: 336px;
+      height: 335px;
+    }
+    @include desktop {
+      margin-top: 60px;
+      margin-bottom: 0;
+      width: 501px;
+      height: 501px;
+    }
+    &__title {
+      @include font('DM Sans', 500, 12px, 1.59, none, 0.02em);
+      font-style: normal;
+      color: $second-text-color;
+      padding-right: 80px;
+      margin-bottom: 23px;
+      @include desktop {
+        @include font('DM Sans', 500, 16px, 1.75, none, 0.04em);
+        margin-bottom: 32px;
+      }
+    }
+    &__description {
+      @include font('DM Sans', 500, 12px, 1.59, none, 0.02em);
+      font-style: normal;
+      color: $third-text-color;
+      margin-bottom: 20px;
+      padding-right: 80px;
+      @include desktop {
+        @include font('DM Sans', 500, 14px, 1.92, none, 0.04em);
+        margin-bottom: 40px;
+      }
+    }
+  }
+  &-button {
+    width: 176px;
+    height: 44px;
+    background: #ffffff;
+    border-radius: 22px;
+    border-style: none;
+    @include font('DM Sans', 700, 16px, 1.31, none, 0.02em);
+    font-style: normal;
     display: flex;
     align-items: center;
-        &-text {
-        margin-left: 32px;
-    @include desktop {
-        margin-left: 99px;}}}
+    justify-content: center;
+    color: #d41443;
+    &__icon {
+      display: block;
+      margin-left: 13px;
+      top: auto;
+      bottom: auto;
+    }
+
+    &:hover,
+    &:focus {
+      animation: about-button 1s;
+      box-shadow: 0 0 0 2em transparent;
+    }
+
+    @keyframes about-button {
+      0% {
+        box-shadow: 0 0 0 0 #ffa5ba;
+      }
+    }
+
+    // &:hover,
+    // &:focus {
+    //             background: rgba(236, 235, 235, 1);}
+  }
+}
+
+.tab-option {
+  @include table {
+    display: flex;
+    align-items: center;
+    &-text {
+      margin-left: 32px;
+      @include desktop {
+        margin-left: 99px;
+      }
+    }
+  }
+}
+
+// ПАСХАЛКА
+.prikol-korova {
+  background-color: transparent;
+  border: none;
 }
